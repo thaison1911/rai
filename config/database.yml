@@ -86,6 +86,7 @@ production:
     <<: *default
     database: rai_production
     username: rai
+    url: <%= ENV["RAI_DATABASE_URL"] %>
     password: <%= ENV["RAI_DATABASE_PASSWORD"] %>
   cache:
     <<: *primary_production
